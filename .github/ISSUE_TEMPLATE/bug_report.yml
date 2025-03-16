@@ -2,12 +2,12 @@ name: "🐛 Bug Report"
 description: "Report a bug to help us improve Midnight Pages!"
 title: "[Bug] "
 labels: ["bug", "needs-triage"]
-assignees: ""
+assignees: []
 
 body:
   - type: markdown
     attributes:
-      value: "## 🐛 Bug Report\n\nThank you for taking the time to report an issue! Please fill out the details below so we can resolve it as quickly as possible. 🚀"
+      value: "## 🐛 Bug Report\n\nThank you for reporting an issue! Please fill in the details below so we can resolve it as quickly as possible. 🚀"
 
   - type: input
     id: bug-title
@@ -23,7 +23,7 @@ body:
     attributes:
       label: "📌 Describe the Bug"
       description: "A clear and concise description of what the bug is."
-      placeholder: "Describe what went wrong..."
+      placeholder: "Explain what went wrong..."
     validations:
       required: true
 
@@ -32,7 +32,10 @@ body:
     attributes:
       label: "🔁 Steps to Reproduce"
       description: "How can we reproduce this bug? Provide step-by-step instructions."
-      placeholder: "1. Go to '...'\n2. Click on '...'\n3. See the error message..."
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See the error message...
     validations:
       required: true
 
@@ -62,7 +65,6 @@ body:
         - "Mobile 📱"
         - "Tablet 📟"
         - "Other"
-      default: 0
     validations:
       required: true
 
