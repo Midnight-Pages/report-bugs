@@ -12,7 +12,7 @@ Found a bug? Something acting weird? 🤔 Don't worry, we've got your back! This
 Before reporting, take a quick peek 👀 at our [issues page](https://github.com/Midnight-Pages/report-bugs/issues) to see if someone else has already reported it. If they have, feel free to add any extra details!  
 
 2️⃣ **Create a New Issue**  
-If your bug is fresh and new, head over to [this link](https://github.com/Midnight-Pages/report-bugs/issues/new) and open a new issue.  
+If your bug is fresh and new, head over to [this link](https://github.com/Midnight-Pages/report-bugs/issues/new?template=bug_report.yml) and open a new issue.  
 
 3️⃣ **Fill in the Details** 📝  
 Make sure to include:  
@@ -37,8 +37,6 @@ Make sure to include:
 >  
 > **Device & Browser:** MacBook Pro (M1) - Safari 16.2  
 >  
-> **Screenshots:**  
-> ![screenshot](https://example.com/screenshot.png)  
 
 ---
 
@@ -58,4 +56,4 @@ If you have any questions, feel free to drop a comment on your issue, and we’l
 
 ---
   
-📌 **[Report a Bug Now!](https://github.com/Midnight-Pages/report-bugs/issues/new)**
+📌 **[Report a Bug Now!](https://github.com/Midnight-Pages/report-bugs/issues/new?template=bug_report.yml)**
