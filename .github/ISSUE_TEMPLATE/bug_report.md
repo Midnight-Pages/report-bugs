@@ -1,38 +1,103 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+name: "🐛 Bug Report"
+description: "Report a bug to help us improve Midnight Pages!"
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+assignees: ""
 
----
+body:
+  - type: markdown
+    attributes:
+      value: "## 🐛 Bug Report\n\nThank you for taking the time to report an issue! Please fill out the details below so we can resolve it as quickly as possible. 🚀"
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+  - type: input
+    id: bug-title
+    attributes:
+      label: "🔖 Bug Title"
+      description: "Give a short, clear title for the bug."
+      placeholder: "E.g., Dark mode not working on mobile"
+    validations:
+      required: true
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: "📌 Describe the Bug"
+      description: "A clear and concise description of what the bug is."
+      placeholder: "Describe what went wrong..."
+    validations:
+      required: true
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "🔁 Steps to Reproduce"
+      description: "How can we reproduce this bug? Provide step-by-step instructions."
+      placeholder: "1. Go to '...'\n2. Click on '...'\n3. See the error message..."
+    validations:
+      required: true
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "✅ Expected Behavior"
+      description: "What should have happened instead?"
+      placeholder: "Explain what you expected..."
+    validations:
+      required: true
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "📸 Screenshots (if applicable)"
+      description: "Upload screenshots to help explain the issue."
+      placeholder: "Drag & drop or attach images here."
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "🖥️ Device Type"
+      description: "What type of device are you using?"
+      options:
+        - "Desktop 💻"
+        - "Mobile 📱"
+        - "Tablet 📟"
+        - "Other"
+      default: 0
+    validations:
+      required: true
 
-**Additional context**
-Add any other context about the problem here.
+  - type: input
+    id: os-version
+    attributes:
+      label: "💿 Operating System"
+      description: "Which OS are you using?"
+      placeholder: "E.g., Windows 11, macOS Ventura, iOS 16, Android 13"
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: "🌐 Browser & Version"
+      description: "Which browser and version are you using?"
+      placeholder: "E.g., Chrome 110, Safari 15, Firefox 108"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "📝 Additional Context"
+      description: "Any other relevant information?"
+      placeholder: "Mention logs, error messages, or anything else that might help."
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "🚨 Confirmation"
+      description: "Before submitting, please confirm:"
+      options:
+        - label: "I have searched for existing issues and didn't find a duplicate. 🔎"
+          required: true
+        - label: "I have provided as much detail as possible. ✍️"
+          required: true
